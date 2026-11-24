@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Orchard Pop app icon. Full-bleed square; artwork stays inside the 80% maskable safe zone. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fb4ff"/>
+      <stop offset=".8" stop-color="#c9efff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff6c2" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#fff6c2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="apple" cx=".36" cy=".3" r=".78">
+      <stop offset="0" stop-color="#ff9a9a"/>
+      <stop offset=".42" stop-color="#ff3b5c"/>
+      <stop offset="1" stop-color="#b30f2e"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#3f9a2d"/>
+      <stop offset="1" stop-color="#9be664"/>
+    </linearGradient>
+    <g id="ray"><path d="M256 270 L240 -40 L272 -40 Z"/></g>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#sky)"/>
+  <g fill="#ffffff" opacity=".22">
+    <use href="#ray"/><use href="#ray" transform="rotate(30 256 270)"/><use href="#ray" transform="rotate(60 256 270)"/>
+    <use href="#ray" transform="rotate(90 256 270)"/><use href="#ray" transform="rotate(-30 256 270)"/><use href="#ray" transform="rotate(-60 256 270)"/>
+    <use href="#ray" transform="rotate(-90 256 270)"/>
+  </g>
+  <circle cx="256" cy="270" r="190" fill="url(#glow)"/>
+
+  <path d="M0 396 Q128 346 256 382 T512 368 V512 H0Z" fill="#7ccf4c"/>
+  <path d="M0 448 Q150 414 300 444 T512 434 V512 H0Z" fill="#4aa832"/>
+  <ellipse cx="256" cy="420" rx="118" ry="17" fill="#1f5a18" opacity=".35"/>
+
+  <!-- apple -->
+  <path d="M256 170 C214 136 126 140 116 238 C106 332 176 414 224 414 C242 414 246 404 256 404 C266 404 270 414 288 414 C336 414 406 332 396 238 C386 140 298 136 256 170 Z"
+        fill="url(#apple)" stroke="#8a0b24" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M256 170 C244 200 244 228 250 250" stroke="#8a0b24" stroke-width="5" stroke-linecap="round" fill="none" opacity=".35"/>
+  <path d="M252 172 C249 140 256 116 272 98" stroke="#6b3d16" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <path d="M270 128 C292 88 342 80 368 96 C348 134 302 150 270 128 Z" fill="url(#leaf)" stroke="#2d7a20" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M280 124 C306 112 330 104 354 100" stroke="#2d7a20" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <ellipse cx="184" cy="236" rx="25" ry="50" transform="rotate(24 184 236)" fill="#ffffff" opacity=".6"/>
+  <circle cx="206" cy="306" r="9" fill="#ffffff" opacity=".45"/>
+
+  <!-- pop sparkles -->
+  <path d="M398 160 l11 28 28 11 -28 11 -11 28 -11 -28 -28 -11 28 -11z" fill="#ffffff"/>
+  <path d="M132 136 l7 17 17 7 -17 7 -7 17 -7 -17 -17 -7 17 -7z" fill="#ffe066"/>
+  <circle cx="414" cy="270" r="7" fill="#ffffff" opacity=".9"/>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "orchard-pop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Orchard Pop: a fruit-matching puzzle game, installable as a Progressive Web App.",
+  "scripts": {
+    "dev": "npx --yes serve public -l 3000",
+    "icons": "node scripts/build-icons.mjs"
+  },
+  "license": "MIT"
+}
